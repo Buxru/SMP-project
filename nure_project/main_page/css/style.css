@@ -1,0 +1,118 @@
+/*Обнуление*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+/*--------------------*/
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.header
+{
+    width: 100%;
+    height: 72px;
+    background-color: #161616;
+    color: #161616;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.menu_icon_div
+{
+    position: absolute;
+    left: 390px;
+    height: 72px;
+    width: 72px;
+}
+.menu_icon{
+    position: absolute;
+    left: 19px;
+    top: 26px;
+}
+.menu_icon_div:hover
+{
+    background-color: #414141;
+}
+.logo_icon_div{
+    margin: 5px 907px 0 907px;
+
+}
+.search_icon_div
+{
+    position: absolute;
+    height: 72px;
+    width: 72px;
+    left: 1305px;
+    bottom: 0px;
+}
+.search_icon
+{
+    position: absolute;
+    top: 20px;
+    left: 20px
+}
+.search_icon_div:hover
+{
+    background-color: #414141;
+}
+.button_search{
+    position: absolute;
+    left: 1382px;
+    bottom: 20px;
+    height: 30px;
+    width: 276px;
+}
+.button_search::placeholder
+{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="text"] {
+    padding: 12px;
+}
+.underheader
+{
+    position: fixed;
+    background: #DFB51E;
+    margin-top: 72px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+.underheader_list {
+    font-size: 28px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 333px;
+    height: 60px;
+    align-items: center;
+}
+
+.underheader_list li a {
+    display: block;
+    width: 314px;
+    height: 60px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+
+.underheader_list li a:hover {
+    background-color: #b69215;
+}
+
+
