@@ -184,7 +184,7 @@ input[type="text"] {
 }
 
 .underheader {
-    position: fixed;
+    position: relative;
     background: #DFB51E;
     margin-top: 72px;
     width: 100%;
@@ -217,18 +217,17 @@ input[type="text"] {
 
 .news_feed {
     position: absolute;
-
-    top: 235px;
+    top: 200px;
     left: 397px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 551px 473px;
+    grid-template-rows: 96px 1px 96px 1px 96px 1px 96px;
     grid-column-gap: 92px;
-    grid-row-gap: 76px;
+    grid-row-gap: 38px;
 }
 
 .main_news {
-    grid-row: 1/span 4;
+    grid-row: 1/span 7;
 }
 
 .main_news div {
@@ -332,5 +331,32 @@ input[type="text"] {
     width: 144px;
     height: 96px;;
 }
+.line {
+    border-bottom: 1px solid #FFC700;
+    margin-bottom: 20px; /* чтобы добавить отступ между линией и следующим блоком */
+}
+.osvita_top{
+    position: absolute;
+    left: 391px;
+    top: 850px;
+    width: 1138px;
+    background-color: #FFC700;
+}
+.osvita_word{
+    position: absolute;
+    font-size: 26px;
+    color: #FFFFFF;
+    top: 870px;
+    left: 400px;
+}
+.osvita_bottom{
+    position: absolute;
+    left: 391px;
+    top: 900px;
+    width: 1138px;
+    background-color: #FFC700;
+}
+
+
 
 
