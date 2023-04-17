@@ -1,26 +1,121 @@
-/*Обнуление*/
-*{padding: 0;margin: 0;border: 0;}
-*,*:before,*:after{-moz-box-sizing: border-box;-webkit-box-sizing: border-box;box-sizing: border-box;}
-:focus,:active{outline: none;}
-a:focus,a:active{outline: none;}
-nav,footer,header,aside{display: block;}
-html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
-input,button,textarea{font-family:inherit;}
-input::-ms-clear{display: none;}
-button{cursor: pointer;}
-button::-moz-focus-inner{padding:0;border:0;}
-a,a:visited{text-decoration: none;}
-a:hover{text-decoration: none;}
-ul li{list-style: none;}
-img{vertical-align: top;}
-h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
 /*--------------------*/
+
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #252525;
 }
-.header
-{
+
+h2 {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 22px;
+    color: white;
+    margin: 0;
+    padding-top: 5px;
+    float: left;
+
+}
+h3 span{
+    color: #FFC700;
+}
+
+h5 {
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 0 0 5px;
+    font-size: 16px;
+    color: #45A6FF;
+}
+
+h6 {
+    padding-top: 5px;
+    margin-top: 12px;
+    font-size: 16px;
+    color: #BFBFBF;
+    float: left;
+    clear: both;
+}
+
+h2 span {
+    color: #FFC700;
+}
+
+
+.header {
     width: 100%;
     height: 72px;
     background-color: #161616;
@@ -29,62 +124,66 @@ body {
     top: 0;
     right: 0;
 }
-.menu_icon_div
-{
+
+.menu_icon_div {
     position: absolute;
     left: 390px;
     height: 72px;
     width: 72px;
 }
-.menu_icon{
+
+.menu_icon {
     position: absolute;
     left: 19px;
     top: 26px;
 }
-.menu_icon_div:hover
-{
+
+.menu_icon_div:hover {
     background-color: #414141;
 }
-.logo_icon_div{
+
+.logo_icon_div {
     margin: 5px 907px 0 907px;
 
 }
-.search_icon_div
-{
+
+.search_icon_div {
     position: absolute;
     height: 72px;
     width: 72px;
     left: 1305px;
     bottom: 0px;
 }
-.search_icon
-{
+
+.search_icon {
     position: absolute;
     top: 20px;
     left: 20px
 }
-.search_icon_div:hover
-{
+
+.search_icon_div:hover {
     background-color: #414141;
 }
-.button_search{
+
+.button_search {
     position: absolute;
     left: 1382px;
     bottom: 20px;
     height: 30px;
     width: 276px;
 }
-.button_search::placeholder
-{
+
+.button_search::placeholder {
     font-size: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
 input[type="text"] {
     padding: 12px;
 }
-.underheader
-{
+
+.underheader {
     position: fixed;
     background: #DFB51E;
     margin-top: 72px;
@@ -92,6 +191,7 @@ input[type="text"] {
     height: 60px;
     display: flex;
 }
+
 .underheader_list {
     font-size: 28px;
     color: white;
@@ -113,6 +213,124 @@ input[type="text"] {
 
 .underheader_list li a:hover {
     background-color: #b69215;
+}
+
+.news_feed {
+    position: absolute;
+
+    top: 235px;
+    left: 397px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 92px;
+    grid-row-gap: 76px;
+}
+
+.main_news {
+    grid-row: 1/span 4;
+}
+
+.main_news div {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    width: 532px;
+    margin: 0 10px 0 10px;
+}
+
+.main_news div h4 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #757575;
+}
+
+.last_news_1 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 473px;
+    height: 96px;
+
+}
+.last_news_1 h6{
+    position: absolute;
+    margin-top: 0px;
+    right: 385px;
+    top: 60px;
+}
+.last_news_1 img {
+    float: right;
+    width: 144px;
+    height: 96px;
+}
+
+.last_news_2 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 473px;
+    height: 96px;
+}
+.last_news_2 h6{
+    position: absolute;
+    margin-top: 0px;
+    right: 385px;
+    top: 60px;
+}
+.last_news_2 img {
+    float: right;
+    width: 144px;
+    height: 96px;
+}
+
+.last_news_3 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 473px;
+    height: 96px;
+}
+.last_news_3 h6{
+    position: absolute;
+    margin-top: 0px;
+    right: 385px;
+    top: 60px;
+}
+.last_news_3 img {
+    float: right;
+    width: 144px;
+    height: 96px;
+}
+
+.last_news_4 {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 473px;
+    height: 96px;
+}
+.last_news_4 h6{
+    position: absolute;
+    margin-top: 0px;
+    right: 385px;
+    top: 60px;
+}
+.last_news_4 img {
+    float: right;
+    width: 144px;
+    height: 96px;;
 }
 
 
