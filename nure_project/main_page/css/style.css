@@ -198,13 +198,13 @@ input[type="text"] {
     width: 100%;
     height: 60px;
     display: flex;
+    justify-content: center;
 }
 
 .underheader_list {
     font-size: 28px;
     color: white;
     display: flex;
-    justify-content: space-between;
     margin: 0 333px;
     height: 60px;
     align-items: center;
