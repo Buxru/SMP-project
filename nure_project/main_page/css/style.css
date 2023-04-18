@@ -2,6 +2,64 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f2f2f2;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    height: calc(80vh - 20px);
+    width: calc(75vw - 20px);
+    background-color: white;
+    border: 1px solid black;
+}
+.header_container {
+    height: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.header {
+    width: 100%;
+    height: 72px;
+    background-color: #161616;
+    color: #161616;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button_container {
+    max-width: 200px;
+    display: flex;
+    padding: 10px;
+}
+.search_icon_div {
+    padding-right: 10px;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
 }
 
 :focus, :active {
@@ -14,17 +72,6 @@ a:focus, a:active {
 
 nav, footer, header, aside {
     display: block;
-}
-
-html, body {
-    height: 100%;
-    width: 100%;
-    font-size: 100%;
-    line-height: 1;
-    font-size: 14px;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
 }
 
 input, button, textarea {
@@ -71,6 +118,8 @@ h1, h2, h3, h4, h5, h6 {
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
+    width: 100%;
+    height: 100%;
     font-family: 'Roboto', sans-serif;
     background-color: #252525;
     z-index: 1;
@@ -117,52 +166,8 @@ h2 span {
     color: #FFC700;
 }
 
-
-.header {
-    width: 100%;
-    height: 72px;
-    background-color: #161616;
-    color: #161616;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-}
-
-.menu_icon_div {
-    position: absolute;
-    left: 390px;
-    height: 72px;
-    width: 72px;
-}
-
-.menu_icon {
-    position: absolute;
-    left: 19px;
-    top: 26px;
-}
-
 .menu_icon_div:hover {
     background-color: #414141;
-}
-
-.logo_icon_div {
-    margin: 5px 907px 0 907px;
-
-}
-
-.search_icon_div {
-    position: absolute;
-    height: 72px;
-    width: 72px;
-    left: 1305px;
-    bottom: 0px;
-}
-
-.search_icon {
-    position: absolute;
-    top: 20px;
-    left: 20px
 }
 
 .search_icon_div:hover {
@@ -170,11 +175,10 @@ h2 span {
 }
 
 .button_search {
-    position: absolute;
-    left: 1382px;
-    bottom: 20px;
+    width: 100%;
     height: 30px;
-    width: 276px;
+    border-radius: 40px;
+    padding: 0 20px;
 }
 
 .button_search::placeholder {
@@ -455,7 +459,3 @@ input[type="text"] {
     font-size: 15px;
     height: 20px;
 }
-
-
-
-
