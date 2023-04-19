@@ -455,3 +455,31 @@ input[type="text"] {
     right: 260px;
     width: 0px;
 }
+
+@media only screen and (max-width: 1440px) {
+    .underheader{
+        display: none;
+    }
+    .main_news{
+        width: 500px;
+        justify-content: center;
+    }
+    .main_news h5{
+        display: inline;
+    }
+    .line{
+        width: 700px;
+    }
+    .last_news_1{
+        width: 700px;
+    }
+    .last_news_1 h6{
+        right: 550px;
+    }
+    .news_feed{
+        margin-top: 1100px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    
+}
