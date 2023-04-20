@@ -1,156 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Блискавка правди</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Main page</title>
+    <link rel="stylesheet" href="style.css">
     <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width">
 </head>
-<body class="body">
-<header class="header">
+<body>
+<div class="header">
     <div class="header_container">
-        <div class="menu_icon_div">
-            <img class="menu_icon" src="materials/menu.svg" alt="menu_icon">
+        <div class="menu_logo_search_icon">
+            <button class="menu_icon">
+                <img src="materials/header/menu.svg" alt="menu_icon">
+            </button>
+            <button class="search_icon">
+                <img src="materials/header/search.svg" alt="search_icon">
+            </button>
         </div>
-        <div class="logo_icon_div">
-            <img class="logo_icon" src="materials/logo.svg" alt="logo_icon">
+        <div class="logo_icon">
+            <img src="materials/header/logo.svg" alt="logo_icon">
         </div>
-        <div class="button_container">
-            <div class="search_icon_div">
-                <img class="search_icon" src="materials/search.svg" alt="search_icon">
-            </div>
-            <div class="button_div">
-                <input class="button_search" type="text" style="border-radius: 40px" placeholder="Пошук...">
-            </div>
-        </div>
+        <button class="profile_icon">
+            <img src="materials/header/profile.svg" alt="profile_icon">
+        </button>
     </div>
-</header>
-<div class="underheader">
-    <ul class=underheader_list>
-        <li><a href="#">Політика</a></li>
-        <li><a href="#">Освіта</a></li>
-        <li><a href="#">Охорона здоров'я</a></li>
-        <li><a href="#">Праця</a></li>
-    </ul>
 </div>
-<main>
+<div class="underheader">
+    <div class="container">
+        <ul>
+            <li><a href="#">Політика</a></li>
+            <li><a href="#">Освіта</a></li>
+            <li><a href="#">Охорона здоров'я</a></li>
+            <li><a href="#">Праця</a></li>
+        </ul>
+    </div>
+</div>
+<div class="main">
     <div class="news_feed">
-        <div class="main_news">
-            <img src="materials/psevdo_materials/main_news.svg" alt="main_news_image">
-            <h5>Політика</h5>
-            <div>
-                <h2><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae corporis dolore enim
-                    explicabo
-                    harum inventore ipsa iste laboriosam laudantium maxime nihil nostrum, perferendis porro quaerat
-                    saepe
-                    sunt velit voluptatum! Accusantium architecto commodi cum eos explicabo illum laudantium minus,
-                    officia
-                    quasi reprehenderit!
-                </h4>
-                <h6>
-                    3 хв. тому
-                </h6>
+        <div class="container">
+            <div class="main_news">
+                <div class="main_news_img">
+                    <img src="materials/psevdo_news/main_news.svg" alt="main_news_img">
+                </div>
+                <div class="genre">Політика</div>
+                <div class="news_name">
+                    <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="news_description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid assumenda atque aut
+                    autem
+                    beatae culpa dignissimos doloribus est eum eveniet hic ipsum mollitia nesciunt nulla officiis
+                    possimus
+                    provident quasi quod ratione recusandae temporibus, tenetur unde vel voluptas voluptatibus.
+                </div>
+                <div>
+                    <h6>3 хв. тому</h6>
+                </div>
             </div>
 
-        </div>
-        <div class="last_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_1.svg" alt="last_news_1_image">
-        </div>
-
-        <div class="line"></div>
-        <div class="last_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_2.svg" alt="last_news_2_image">
-        </div>
-
-        <div class="line"></div>
-        <div class="last_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_3.svg" alt="last_news_3_image">
-        </div>
-
-        <div class="line"></div>
-        <div class="last_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_4.svg" alt="last_news_4_image">
-        </div>
-        <br>
-    </div>
-    <hr class="osvita_top" color="FFC700" size="3px">
-    <div class="osvita_word">
-        Освіта
-    </div>
-    <hr class="osvita_bottom" color="FFC700" size="1px">
-
-    <div class="osvita_news">
-        <div class="big_osvita_news_1">
-            <img src="materials/psevdo_materials/main_news.svg" alt="main_news_image">
-            <br>
-            <h5>Політика</h5>
-            <div>
-                <h2><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae corporis dolore enim
-                    explicabo
-                    harum inventore ipsa iste laboriosam laudantium maxime nihil nostrum, perferendis porro quaerat
-                    saepe
-                    sunt velit voluptatum! Accusantium architecto commodi cum eos explicabo illum laudantium minus,
-                    officia
-                    quasi reprehenderit!
-                </h4>
-                <h6>
-                    3 хв. тому
-                </h6>
+            <div class="last_news">
+                <div class="news_name"><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="last_news_img"><img src="materials/psevdo_news/last_news_1.svg" alt="last_news_1"></div>
+                <div><h6>3 хв. тому</h6></div>
+            </div>
+            <div class="line"></div>
+            <div class="last_news">
+                <div class="news_name"><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="last_news_img"><img src="materials/psevdo_news/last_news_2.svg" alt="last_news_1"></div>
+                <div><h6>3 хв. тому</h6></div>
+            </div>
+            <div class="line"></div>
+            <div class="last_news">
+                <div class="news_name"><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="last_news_img"><img src="materials/psevdo_news/last_news_1.svg" alt="last_news_1"></div>
+                <div><h6>3 хв. тому</h6></div>
+            </div>
+            <div class="line"></div>
+            <div class="last_news">
+                <div class="news_name"><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="last_news_img"><img src="materials/psevdo_news/last_news_1.svg" alt="last_news_1"></div>
+                <div><h6>3 хв. тому</h6></div>
             </div>
         </div>
-        <div class="big_osvita_news_1">
-            <img src="materials/psevdo_materials/main_news.svg" alt="main_news_image">
-            <br>
-            <h5>Політика</h5>
-            <div>
-                <h2><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h2>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi beatae corporis dolore enim
-                    explicabo
-                    harum inventore ipsa iste laboriosam laudantium maxime nihil nostrum, perferendis porro quaerat
-                    saepe
-                    sunt velit voluptatum! Accusantium architecto commodi cum eos explicabo illum laudantium minus,
-                    officia
-                    quasi reprehenderit!
-                </h4>
-                <h6>
-                    3 хв. тому
-                </h6>
-            </div>
-        </div>
-        <div class="small_osvita_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_1.svg" alt="last_news_1_image">
-        </div>
-        <div class="line_osvita_news"></div>
-        <div class="small_osvita_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_1.svg" alt="last_news_1_image">
-        </div>
-        <div class="line_osvita_news"></div>
-        <div class="small_osvita_news_1">
-            <h3><span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.</h3>
-            <br>
-            <div class="time_ago_last_news"><h6>3 хв. тому</h6></div>
-            <img src="materials/psevdo_materials/last_news_1.svg" alt="last_news_1_image">
+    </div>
+
+
+    <div class="partition">
+        <div class="container">
+            <div class="partition_line_top"></div>
+            <div class="partition_name">Політика</div>
+            <div class="partition_line_bottom"></div>
         </div>
     </div>
-</main>
+    <div class="partition_news">
+        <div class="container">
+            <div class="big_partition_news">
+                <div class="big_partition_news_img">
+                    <img src="materials/psevdo_news/main_news.svg" alt="main_news_img">
+                </div>
+                <div class="genre">Політика</div>
+                <div class="big_partition_news_name">
+                    <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="big_partition_news_description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid assumenda atque aut
+                    autem
+                    beatae culpa dignissimos doloribus est eum eveniet hic ipsum mollitia nesciunt nulla officiis
+                    possimus
+                    provident quasi quod ratione recusandae temporibus, tenetur unde vel voluptas voluptatibus.
+                </div>
+                <div>
+                    <h6>3 хв. тому</h6>
+                </div>
+            </div>
+
+            <div class="big_partition_news">
+                <div class="big_partition_news_img">
+                    <img src="materials/psevdo_news/main_news.svg" alt="main_news_img">
+                </div>
+                <div class="genre">Політика</div>
+                <div class="big_partition_news_name">
+                    <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit.
+                </div>
+                <div class="big_partition_news_description">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad aliquid assumenda atque aut
+                    autem
+                    beatae culpa dignissimos doloribus est eum eveniet hic ipsum mollitia nesciunt nulla officiis
+                    possimus
+                    provident quasi quod ratione recusandae temporibus, tenetur unde vel voluptas voluptatibus.
+                </div>
+                <div>
+                    <h6>3 хв. тому</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 </html>
