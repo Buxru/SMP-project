@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05b5c9bc-49a5-4964-ab18-39d8914905ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/nure_project/main_page/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/small_partition_news_img.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/index.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/nure_project/main_page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/header/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/header/menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_materials/last_news_1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/last_news_1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_materials/last_news_2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/last_news_2.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_materials/last_news_3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/last_news_3.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_materials/last_news_4.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/last_news_4.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_materials/main_news.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/psevdo_news/main_news.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nure_project/main_page/materials/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/materials/header/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nure_project/main_page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +61,9 @@
       <workItem from="1681775991153" duration="5565000" />
       <workItem from="1681859283892" duration="6768000" />
       <workItem from="1681878475660" duration="3012000" />
-      <workItem from="1681977400200" duration="144000" />
+      <workItem from="1681977400200" duration="927000" />
+      <workItem from="1681988427905" duration="1322000" />
+      <workItem from="1682085950974" duration="3581000" />
     </task>
     <servers />
   </component>

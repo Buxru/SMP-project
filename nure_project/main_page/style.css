@@ -37,6 +37,7 @@ body{
 h6{
     font-size: 18px;
     color: #BFBFBF;
+    font-family: Roboto, sans-serif;
 }
 .header {
     position: fixed;
@@ -224,10 +225,13 @@ h6{
     display: grid;
     grid-template-columns: 344px 344px 378px;
     grid-template-rows: 96px 40px 96px 40px 96px;
-    column-gap: 31px;
+    column-gap: 26px;
+
+
 }
-.big_partition_news{
+.partition_news{
     margin-top: 20px;
+    margin-bottom: 90px;
 }
 .big_partition_news img{
     width: 344px;
@@ -253,6 +257,36 @@ h6{
     padding-top: 5px;
     padding-left: 15px;
 }
+.small_partition_news{
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+.small_partition_news img{
+    height: 92px;
+}
+.small_partition_news h6{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+.small_partition_news_name{
+    padding-top: 10px;
+    font-size: 19px;
+    color: white;
+    width: 270px;
+}
+.small_partition_news span{
+    color: #DFB51E;
+}
+.partition_news .container .line{
+    grid-column: 3;
+    margin-top: 17px;
+    margin-right: 40px;
+    width: 350px;
+}
+
 
 
 
