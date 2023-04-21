@@ -19,8 +19,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #252525;
     font-family: Roboto, sans-serif;
+}
+.main{
+    flex: 1 1 auto;
 }
 .header_container{
     display: flex;
@@ -284,8 +290,69 @@ h6{
     grid-column: 3;
     margin-top: 17px;
     margin-right: 40px;
-    width: 350px;
+    width: 378px;
+    margin-left: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #161616;
+    color: #BFBFBF;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 7px 0;
+}
+
+.footer_container {
+    max-width: 1116px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer_links ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer_links ul li a {
+    text-decoration: none;
+    color: #BFBFBF;
+}
+
+.footer_links ul li a:hover {
+    color: white;
+}
+
+.footer_logo img {
+    width: 120px;
+    margin-left: -172px;
+}
+
+.footer_social_icons a {
+    margin-left: 10px;
+}
+
+.footer_social_icons img {
+    width: 36px;
+}
+
 
 
 
