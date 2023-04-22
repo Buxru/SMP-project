@@ -47,18 +47,17 @@ body{
 
 
 @media screen and (max-width: 1116px) {
-    .container{
+    .container {
         max-width: 950px;
         justify-content: center;
     }
-    .partition_news .container {
+   .partition_news .container {
         display: grid;
         grid-template-columns: 1fr; /* одна колонка, занимающая всю ширину родителя */
         grid-template-rows: auto; /* автоматическая высота строк */
         grid-gap: 20px; /* расстояние между элементами */
     }
 }
-
 
 
 
@@ -181,7 +180,6 @@ h6{
     height: 530px;
     max-width: 557px;
     font-family: 'Roboto', sans-serif;
-    grid-column: 1;
     grid-row: 1/span 7;
 
 }
@@ -248,8 +246,8 @@ h6{
 }
 .partition_news .container{
     display: grid;
-    grid-template-columns: repeat(auto-fill, auto);
-    grid-template-rows: repeat(auto-fit, auto);
+    align-items: start;
+    grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
     column-gap: 26px;
     row-gap: 25px;
 }
@@ -282,7 +280,7 @@ h6{
     padding-left: 15px;
 }
 .small_partition_news{
-    grid-column: 3;
+    grid-column: 1;
     display: grid;
     grid-template-columns: 3fr 1fr;
     justify-content: center;
@@ -308,9 +306,6 @@ h6{
     max-width: 378px;
     margin-left: 0;
 }
-
-
-
 
 
 
@@ -376,12 +371,12 @@ footer {
     left: 50%;
     transform: translateX(-50%);
 }
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 768px) {
+    .partition_news .container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .big_partition_news {
+        grid-row: auto;
+    }
+}
