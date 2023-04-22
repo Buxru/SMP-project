@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="05b5c9bc-49a5-4964-ab18-39d8914905ac" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/nure_project/main_page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nure_project/main_page/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/nure_project/main_page/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="D:\Рабочий стол\php\php-7.4.33-nts-Win32-vc15-x64\php.exe" />
+  <component name="ProjectId" id="2OTt5bv3jCQkbt9VdzNhUNwgkCb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\nikit\Desktop\ХНУРЭ\2 курс\2 семестр\Скриптові мови програмування\Проект\try1\nure_project\main_page\materials\header" />
+      <recent name="D:\Users\nikit\Desktop\ХНУРЭ\2 курс\2 семестр\Скриптові мови програмування\Проект\try1\nure_project\main_page" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="05b5c9bc-49a5-4964-ab18-39d8914905ac" name="Changes" comment="" />
+      <created>1681596218492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681596218492</updated>
+      <workItem from="1681596219433" duration="349000" />
+      <workItem from="1681754521656" duration="225000" />
+      <workItem from="1681770525625" duration="431000" />
+      <workItem from="1681770974343" duration="4924000" />
+      <workItem from="1681775991153" duration="5565000" />
+      <workItem from="1681859283892" duration="6768000" />
+      <workItem from="1681878475660" duration="3012000" />
+      <workItem from="1681977400200" duration="927000" />
+      <workItem from="1681988427905" duration="1322000" />
+      <workItem from="1682085950974" duration="8926000" />
+      <workItem from="1682162781768" duration="11396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
