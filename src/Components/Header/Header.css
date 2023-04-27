@@ -1,0 +1,68 @@
+.header{
+    position: fixed;
+    padding: 0;
+    height: 72px;
+    width: 100%;
+    background-color: #161616;
+    z-index: 999;
+}
+.header_container{
+    display: flex;
+    max-width: 1116px;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.header .container{
+    height: 72px;
+}
+.menu_logo_search_icon{
+    display: flex;
+}
+.menu_icon{
+    height: 72px;
+    width: 72px;
+    background-color: #161616;
+}
+.menu_icon:hover{
+    background-color: #444444;
+    transition: all 0.1s ease-in-out;
+}
+.menu_icon:not(:hover)
+{
+    transition: all 0.3s ease-in-out;
+}
+.logo_icon{
+    display: flex;
+    width: 166px;
+    margin-left: -72px;
+}
+.search_icon{
+    height: 72px;
+    width: 72px;
+    background-color: #161616;
+}
+.search_icon:hover{
+    background-color: #444444;
+    transition: all 0.1s ease-in-out;
+}
+.search_icon:not(:hover)
+{
+    transition: all 0.3s ease-in-out;
+}
+.profile_icon{
+    position: relative;
+    width: 72px;
+    height: 72px;
+    background-color: #161616;
+}
+.profile_icon:hover{
+    background-color: #444444;
+    transition: all 0.1s ease-in-out;
+}
+.profile_icon:not(:hover)
+{
+    transition: all 0.3s ease-in-out;
+}
+
+
