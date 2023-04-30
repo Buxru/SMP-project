@@ -9,11 +9,10 @@
     row-gap: 15px;
 }
 .main_news{
-    height: 530px;
+    max-height: 530px;
     max-width: 557px;
     font-family: 'Roboto', sans-serif;
-    grid-row: 1/span 7;
-
+    grid-row: 1/span 4;
 }
 .genre{
     padding-top: 10px;
@@ -45,9 +44,10 @@
 .line{
     margin-left: 10px;
     height: 1px;
-    max-width: 464px;
     background-color: #DFB51E;
+    grid-column: 1 / -1;
 }
+
 .last_news{
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -58,3 +58,12 @@
 .last_news span{
     color: #DFB51E;
 }
+
+.last_news_img{
+    grid-column: 2;
+}
+.last_news_img img{
+    max-height: 96px;
+    max-width: 144px;
+}
+

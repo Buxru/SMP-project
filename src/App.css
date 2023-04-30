@@ -30,7 +30,9 @@ body{
     max-width: 1116px;
     margin: 0 auto;
 }
-
-.line{
-    display: none;
+h6{
+    font-size: 18px;
+    color: #BFBFBF;
+    font-family: Roboto, sans-serif;
 }
+
