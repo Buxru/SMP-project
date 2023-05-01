@@ -69,7 +69,7 @@
 }
 .small_partition_news{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
 }
 .small_partition_news img{
     height: 92px;
@@ -93,4 +93,31 @@
 {
     max-width: 120px;
     max-height: 96px;
+}
+@media screen and (max-width: 1089px) {
+    .partition_news {
+        max-height: 748px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .partition_news .container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    .partition_news {
+        max-height: 1150px;
+    }
+    .small_partition_news {
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        padding-left: 7rem;
+    }
+    .big_partition_news {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .small_partition_news_name {
+        padding-right: 4rem;
+    }
 }
