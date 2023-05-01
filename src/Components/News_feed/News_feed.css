@@ -6,10 +6,12 @@
 .news_feed .container{
     display: grid;
     column-gap: 96px;
-    grid-template-columns: repeat(auto-fit, 497px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 497px));
+    grid-template-rows: repeat(auto-fit, minmax(0, auto));
     row-gap: 15px;
 }
 .main_news{
+    position: relative;
     max-height: 530px;
     max-width: 557px;
     font-family: 'Roboto', sans-serif;
@@ -72,4 +74,34 @@
     max-height: 96px;
     max-width: 144px;
 }
+
+@media screen and (max-width: 1089px) {
+    .container {
+        justify-content: center;
+    }
+    .line{
+        display: none;
+    }
+    .partition_news {
+        max-height: 200px;
+    }
+    .partition_news .container {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: auto; /* автоматическая высота строк */
+        grid-gap: 20px; /* расстояние между элементами */
+    }
+    .main_news h6{
+        position: absolute;
+        top: 290px;
+        right: 0;
+        padding-left: 10px;
+    }
+    .main_news {
+        margin-bottom: 25px;
+    }
+}
+
+
+
 
