@@ -1,6 +1,7 @@
 .news_feed{
     margin-top: 150px;
     height: auto;
+    position: relative;
 }
 .news_feed .container{
     display: grid;
@@ -30,6 +31,10 @@
 .main_news span{
     color: #FFC700;
 }
+.main_news_img img{
+    max-height: 309px;
+    max-width: 497px;
+}
 .news_description{
     font-size: 18px;
     color: #9D9D9D;
@@ -38,10 +43,11 @@
     padding-top: 10px;
 }
 .main_news h6{
-    padding-top: 10px;
-    padding-left: 15px;
+    position: absolute;
+    top: 480px;
+    padding-left: 10px;
 }
-.line{
+.line_last_news{
     margin-left: 10px;
     height: 1px;
     background-color: #DFB51E;

@@ -20,8 +20,8 @@ const Main_news = () => {
         genre: 'some genre',
         hotTitle: 'some hot title',
         title: 'title',
-        description: this,
-        time: this
+        description: 'ajgjudshgfuigbdsufigbhdishgyug dushgsgdufgdnsuig dfs igldbnlfus igbsd g uf i bisd gifsdgnliuf sdbngifu dbglsf if',
+        time: '5 хв тому'
     }
     return (
         <div className="main_news">
@@ -73,8 +73,8 @@ const Last_news = () => {
                 <div className="last_news" key={index}>
                     <div className="news_name">
                         <span>{element.HotTitle}</span> {element.Title}
-                        <br />
-                        <br />
+                        <br/>
+                        <br/>
                         <div>
                             <h6>{element.Time}</h6>
                         </div>
@@ -82,16 +82,15 @@ const Last_news = () => {
 
                     </div>
                     <div className="last_news_img">
-                    <img src={element.Image} alt="last_news_1" />
-                </div>
+                        <img src={element.Image} alt="last_news_1"/>
+                    </div>
                     {index < 3 && (
-                        <div className="line" style={{ position: "relative", marginTop: "20px"}}></div>
+                        <div className="line_last_news" style={{position: "relative", marginTop: "20px"}}></div>
                     )}
                 </div>
             ))}
         </>
     );
-
 
 
 }
