@@ -16,7 +16,7 @@ const News_feed = () => {
 };
 const Main_news = () => {
     const Main_news = {
-        image: require('./../../assets/News_feed/main_news.svg').default,
+        image: require('../../../assets/News_feed/main_news.svg').default,
         genre: 'some genre',
         hotTitle: 'some hot title',
         title: 'title',
@@ -47,22 +47,22 @@ const Last_news = () => {
         {
             HotTitle: 'Lorem ipsum',
             Title: 'dolor sit amet, consectetur adipisicing elit.',
-            Image: require('./../../assets/News_feed/main_news.svg').default,
+            Image: require('../../../assets/News_feed/main_news.svg').default,
             Time: '3 minutes'
         }, {
             HotTitle: 'Lorem ipsum',
             Title: 'dolor sit amet, consectetur adipisicing elit.',
-            Image: require('./../../assets/News_feed/last_news_2.svg',).default,
+            Image: require('../../../assets/News_feed/last_news_2.svg',).default,
             Time: '3 minutes'
         }, {
             HotTitle: 'Lorem ipsum',
             Title: 'dolor sit amet, consectetur adipisicing elit.',
-            Image: require('./../../assets/News_feed/last_news_3.svg',).default,
+            Image: require('../../../assets/News_feed/last_news_3.svg',).default,
             Time: '3 minutes'
         }, {
             HotTitle: 'Lorem ipsum',
             Title: 'dolor sit amet, consectetur adipisicing elit.',
-            Image: require('./../../assets/News_feed/last_news_4.svg',).default,
+            Image: require('../../../assets/News_feed/last_news_4.svg',).default,
             Time: '3 minutes'
         }
 

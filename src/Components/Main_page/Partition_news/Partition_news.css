@@ -94,6 +94,7 @@
     max-width: 120px;
     max-height: 96px;
 }
+
 @media screen and (max-width: 1089px) {
     .partition_news {
         max-height: 748px;

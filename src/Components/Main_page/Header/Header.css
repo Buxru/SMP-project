@@ -65,4 +65,56 @@
     transition: all 0.3s ease-in-out;
 }
 
+.searching_space{
+    display: flex;
+    background-color: white;
+    border-radius: 17px;
+    min-width: 596px;
+    min-height: 34px;
+    justify-content: end;
+}
+.search{
+    min-height: 34px;
+    min-width: 105px;
+    position: relative;
+    border-radius: 17px !important;
+    color: white;
+}
+.searching_space input{
+    padding: 0 15px 0 15px;
+    position: relative;
+    border-radius: 17px;
+    display: inline-block;
+    min-width: 515px;
+}
+.searching_space input::placeholder{
+}
+.searching_area{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    background-color: #626262;
+    top: 72px;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out; /* добавляем плавную анимацию */
+}
+
+.block-active.searching_area{
+    transform: translateY(0%);
+}
+
+.block-inactive.searching_area{
+    transform: translateY(-100%);
+}
+
+
+
+
+
+
+
 

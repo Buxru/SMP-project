@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Partition_news.css';
 
-const Partition_news = () => {
 
+
+const Partition_news = () => {
+    const politic_ref = useRef(null);
 
     return (
         <>
@@ -42,7 +44,7 @@ const Partition_genre = () => {
 const Big_partition_news = () => {
     const bigPartitionNews = [
         {
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             genre: 'some genre',
             hotTitle: 'some hot title',
             title: 'title',
@@ -50,7 +52,7 @@ const Big_partition_news = () => {
             time: '3 хв тому'
         },
         {
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             genre: 'some genre',
             hotTitle: 'some hot title',
             title: 'title',
@@ -88,25 +90,25 @@ const Small_partition_news = () => {
         {
             hotTitle: 'some hot title',
             title: 'title',
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             time: '3 хв тому'
         },
         {
             hotTitle: 'some hot title',
             title: 'title',
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             time: '3 хв тому'
         },
         {
             hotTitle: 'some hot title',
             title: 'title',
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             time: '3 хв тому'
         },
         {
             hotTitle: 'some hot title',
             title: 'title',
-            image: require('./../../assets/News_feed/main_news.svg').default,
+            image: require('../../../assets/News_feed/main_news.svg').default,
             time: '3 хв тому'
         }
     ]

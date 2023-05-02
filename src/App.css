@@ -22,6 +22,8 @@ body{
     flex-direction: column;
     background-color: #252525;
     font-family: Roboto, sans-serif;
+    padding: 0 !important;
+    overflow-y: scroll !important;
 }
 #root {
     height: 100%;
