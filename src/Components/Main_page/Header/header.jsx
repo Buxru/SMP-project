@@ -20,8 +20,9 @@ import Settings from '@mui/icons-material/Settings';
 import Logout from '@mui/icons-material/Logout';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
 import LoginIcon from '@mui/icons-material/Login';
-import Login from "../../Login/login";
+import Login from "../Login/Login";
 import Logo from '../../../assets/Header/logo.svg';
+import Registration from "../Registration/Registration";
 
 
 
@@ -99,6 +100,7 @@ const Profile = () => {
     }
     const [anchorEl, setAnchorEl] = useState(false);
     const [isLoginOpen, setLogin] = useState(false);
+    const [isRegisterOpen, setRegister] = useState(false);
     const open = anchorEl;
     const handleClick = (event) => {
         event.preventDefault();
@@ -112,7 +114,12 @@ const Profile = () => {
     }
     const handleLoginClose = () => {
         setLogin(false);
-        console.log(isLoginOpen);
+    }
+    const handleRegisterOpen = () => {
+        setRegister(true);
+    }
+    const handleRegisterClose = () => {
+        setRegister(false);
     }
     const [checked, setChecked] = useState(false);
     const handleCheckboxChange = (event) => {
@@ -123,6 +130,7 @@ const Profile = () => {
     const profile_menu_color = "444445";
     return(    <>
             <Login open={isLoginOpen} closeWindow={handleLoginClose} />
+            <Registration open={isRegisterOpen} closeWindow={handleRegisterClose}/>
             <Box sx={{ display: 'flex', alignItems: 'center',    textAlign: 'center' }}>
                 <Tooltip title="Профіль">
                     <Button
@@ -236,7 +244,7 @@ const Profile = () => {
                         </ListItemIcon>
                         Увійти
                     </MenuItem>
-                    <MenuItem sx={{color: "#F2F2F2"}}>
+                    <MenuItem onClick={handleRegisterOpen} sx={{color: "#F2F2F2"}}>
                         <ListItemIcon>
                             <PersonAddIcon fontSize="small" sx={{color: "#FFC700"}}/>
                         </ListItemIcon>

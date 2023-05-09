@@ -27,8 +27,7 @@ const Login = (props) => {
 
     return (
         <>
-
-            {props.open ? <form action="src/Components/Main_page/Login/login">
+            {props.open ? <form action="src/Components/Main_page/Login/Login.jsx">
                     <ThemeProvider theme={theme}>
                         <div className="blur" onClick={props.closeWindow}></div>
                         <div className="login">
@@ -67,16 +66,15 @@ const Login = (props) => {
                                 </Button>
                                 </div>
                                 <div className="statement">
-                                    <span>Не маєте аккаунту? <a href="src/Components/Main_page/Login/login#">Зареєструйтесь</a></span>
+                                    <span>Не маєте аккаунту? <a href="src/Components/Main_page/Login/login#Login.jsx">Зареєструйтесь</a></span>
                                     <br/>
-                                    <span><a href="src/Components/Main_page/Login/login#">Забули логін або пароль?</a></span>
+                                    <span><a href="src/Components/Main_page/Login/login#Login.jsx">Забули логін або пароль?</a></span>
                                 </div>
                             </div>
                         </div>
                     </ThemeProvider>
                 </form>
                 : null}
-
         </>
     );
 };

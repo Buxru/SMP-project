@@ -20,11 +20,7 @@
     backdrop-filter: blur(5px);
 }
 .tip_reg{
-    position: relative;
     display: block;
-    right: 90px;
-    left: 75px;
-    top: 45px;
     min-width: 130px;
     min-height: 24px;
     color: white;
@@ -32,10 +28,8 @@
 }
 .e-mail_reg{
     display: flex;
-    position: relative;
     min-width: 307px !important;
     height: 47px;
-    top: 47px;
     border-radius: 21px;
     justify-content: center;
 }
@@ -50,16 +44,12 @@
 }
 .user_surname{
     display: flex;
-    position: relative;
     min-width: 307px !important;
     height: 47px;
-    top: 73px;
     border-radius: 21px;
     justify-content: center;
 }
 .user_sex{
-    display: flex;
-    position: relative;
     min-width: 298px !important;
     height: 47px;
     top: 86px;
@@ -74,13 +64,8 @@
     padding: 0 15px 0 15px;
 }
 .user_date{
-    display: flex;
-    position: relative;
     min-width: 307px !important;
-    height: 47px;
-    top: 99px;
     border-radius: 21px;
-    justify-content: center;
 }
 .user_date input[type="date"] {
     color: #393939;
@@ -88,10 +73,7 @@
 
 .password_reg{
     display: flex;
-    position: relative;
     min-width: 307px !important;
-    height: 47px;
-    top: 112px;
     border-radius: 21px;
     justify-content: center;
 }
@@ -106,12 +88,4 @@
 .checkbox a{
     color: #FFC700;
 }
-.error{
-    display: flex;
-    position: relative;
-    top: 112px;
-    left: 70px;
-    font-size: 12px;
-    color: #ff4136;
-    font-weight: bold;
-}
+
