@@ -1,0 +1,86 @@
+.side_bar_space{
+    position: sticky;
+    left: 0;
+    top: 0;
+    min-width: 320px;
+    height: 100%;
+    background-color: #1A1A1A;
+}
+.logo_div{
+margin: 0 auto;
+    padding-top: 24px;
+    max-width: 168px;
+    max-height: 65px;
+}
+.admin_profile{
+    display: flex;
+    padding-top: 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.admin_name{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #F8C100;
+    padding-top: 24px;
+}
+.admin_rang{
+    font-family: 'Poppins', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+    color: #F8C100;
+}
+.managment_bar_container{
+    display: flex;
+    margin-top: 55px;
+    min-width: 320px;
+    min-height: 74px;
+}
+.managment_bar_container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+}
+.managment_bar_container span{
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F8C100;
+}
+.managment_bar_container Button{
+    display: flex;
+    justify-content: start;
+    padding-left: 15px;
+}
+.exit_btn{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    justify-content: start;
+}
+.exit_btn span{
+    padding-left: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F8C100;
+}
+.exit_btn Button{
+justify-content: start;
+    padding-left: 15px;
+}
+
+
+

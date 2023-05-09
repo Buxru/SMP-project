@@ -1,0 +1,122 @@
+.blur{
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 5, 60%);
+    backdrop-filter: blur(5px);
+}
+.login{
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.login .login_area {
+    background-color: #494949;
+    position: fixed;
+    min-height: 475px;
+    min-width: 419px;
+    max-height: 1000px;
+    border-radius: 34px;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 50%;
+}
+.login .close_btn{
+    border-radius: 100px !important;
+    position: absolute;
+    left: 350px;
+    top: 5px;
+}
+.login .top_part {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+.login .tip_log {
+    display: block;
+    min-width: 130px;
+    color: white;
+    font-size: 16px;
+    padding-left: 75px;
+    margin-top: -15px;
+}
+.login .forma{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 60px;
+    height: 100%;
+}
+.login input {
+    border-radius: 21px;
+    min-width: 297px;
+    min-height: 47px;
+    padding: 0 15px 0 15px;
+    margin-top: 20px;
+}
+.login input::placeholder{
+    color: #393939;
+}
+
+.login .e-mail {
+    display: flex;
+    min-width: 307px !important;
+    height: 47px;
+    border-radius: 21px;
+    justify-content: center;
+}
+
+.login .password {
+    display: flex;
+    min-width: 307px !important;
+    height: 47px;
+    border-radius: 21px;
+    justify-content: center;
+}
+.login .acception{
+    font-size: 16px;
+    color: white;
+    padding-top: 15px;
+    padding-left: 60px;
+}
+.login .acception .span{
+}
+.login .login_btn{
+    max-height: 35px;
+    min-width: 200px !important;
+    border-radius: 15px !important;
+
+}
+.login .statement{
+    font-weight: bold;
+    padding-left: 75px;
+}
+.login .statement span{
+    display: block;
+    font-size: 16px;
+}
+.login .statement span{
+    color: white;
+}
+.login .statement a{
+    color: #DFB51E;
+}
+.login .statement a:active{
+    color: white !important;
+}
+.login .login_div{
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    margin-top: 10px;
+}
+
+
