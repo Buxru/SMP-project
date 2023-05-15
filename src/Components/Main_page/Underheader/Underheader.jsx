@@ -22,7 +22,6 @@ const MyComponent = () => {
         <div className="underheader">
             <div className="container">
                 <List className="Ul" sx={{maxWidth: 1116, height: 50}}>
-
                     <ListItem className="Li"><Button className="Underheader_A" sx={{width: 279, height: 50, color: grey[100]}} >Політика</Button></ListItem>
                     <ListItem className="Li"><Button className="Underheader_A" sx={{width: 279, height: 50, color: grey[100]}}>Освіта</Button></ListItem>
                     <ListItem className="Li"><Button className="Underheader_A" sx={{width: 279, height: 50, color: grey[100]}}>Охорона здоров'я</Button></ListItem>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Side_bar from "../Side_bar/Side_bar";
 import "./HomeAdmin.css"
+import Logs from "../Logs/Logs";
 
 const HomeAdmin = () => {
     const user_info = {
@@ -13,6 +14,7 @@ const HomeAdmin = () => {
         <div className="home">
             <Side_bar user_info={user_info}/>
             <div className="home_page_container">
+                <Logs/>
             </div>
         </div>
     );
