@@ -23,7 +23,8 @@ import LoginIcon from '@mui/icons-material/Login';
 import Login from "../Login/Login";
 import Logo from '../../../assets/Header/logo.svg';
 import Registration from "../Registration/Registration";
-
+import AccessibleForwardIcon from '@mui/icons-material/AccessibleForward';
+import {Link} from "react-router-dom";
 
 
 const theme = createTheme({
@@ -126,7 +127,8 @@ const Profile = () => {
         setChecked(event.target.checked);
     };
 
-    const logged_in = false;
+    const logged_in = true;
+    const [isAdmin, setIsAdmin] = useState(false);
     const profile_menu_color = "444445";
     return(    <>
             <Login open={isLoginOpen} closeWindow={handleLoginClose} />
@@ -192,6 +194,19 @@ const Profile = () => {
                         </ListItemIcon>
                         Налаштування
                     </MenuItem>
+                    <Link to="/admin">
+                    <MenuItem onClick={handleClose} sx={{color: "#F2F2F2"}}>
+
+                        <ListItemIcon >
+
+                            <AccessibleForwardIcon fontSize="small" sx={{color: "#FFC700"}}/>
+
+                        </ListItemIcon>
+
+                        Адмін панель
+                    </MenuItem>
+                    </Link>
+
                     <MenuItem onClick={handleClose} sx={{color: "#F2F2F2"}}>
                         <ListItemIcon>
                             <Logout fontSize="small" sx={{color: "#FFC700"}}/>

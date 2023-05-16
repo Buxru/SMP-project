@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Side_bar from "../Side_bar/Side_bar";
 import SearchIcon from '@mui/icons-material/Search';
 import DownloadIcon from '@mui/icons-material/Download';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -9,15 +8,25 @@ import {grey, purple} from '@mui/material/colors';
 import {yellow} from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import { styled } from '@mui/material/styles';
+import Side_bar from "../Side_bar/Side_bar";
 
 
 
 const Logs = () => {
+    const user_info = {
+        name: 'Никита',
+        surname: 'Покора',
+        avatar: 'https://s6.stc.all.kpcdn.net/afisha/msk/wp-content/uploads/sites/5/2023/01/kadr-iz-filma-avatar-put-vody.jpg',
+        rang: 'Адмін'
+    }
     return (
-        <div>
-            <LogsHeader/>
-            <LogsTable/>
-        </div>
+            <div className="home">
+                <Side_bar user_info={user_info}/>
+                <div className="home_page_container">
+                    <LogsHeader/>
+                    <LogsTable/>
+                </div>
+            </div>
     );
 };
 
