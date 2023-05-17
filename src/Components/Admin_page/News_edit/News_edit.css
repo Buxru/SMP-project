@@ -1,0 +1,117 @@
+.admin_news{
+    margin-top: 120px;
+    margin-left: 150px;
+    height: 100%;
+    width: 856px;
+}
+.news_edit_name{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+.news_tabs{
+    min-height: 30px;
+    margin-top: 20px;
+}
+.TabPanel_news{
+    width: 600px !important;
+}
+.edit_news{
+    margin-left: 60px !important;
+}
+.news_container{
+    margin-left: -25px;
+    margin-top: 30px;
+    width: 856px !important;
+}
+.news_container .news{
+    height: 138px;
+    background-color: #FCFCE4;
+    border-radius: 15px;
+    margin-bottom: 31px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+.news_container .news .news_genre{
+    padding-top: 5px;
+    margin-left: 175px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #0400B8;
+}
+.news_container .news .news_edit_info{
+    display: flex;
+    align-items: center;
+}
+.news_container .news .news_edit_info{
+    margin-left: 62px;
+}
+.news_container .news .news_edit_info .ID{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #E8B500;
+}
+
+.news_container .news .news_edit_info .dash{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #666666;
+    padding: 0 10px;
+}
+.news_container .news .news_edit_info .news_edit_hot_title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #DBAB00;
+    padding-right: 5px;
+}
+.news_container .news .news_edit_info .news_edit_title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+.news_container .news .news_edit_info .edit_news_info{
+    width: 690px;
+    display: flex;
+    align-items: center;
+}
+.news .news_edit_bottom{
+    height: 44px;
+    width: 794px;
+    border-top: #000000 solid 2px;
+    margin-left: 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news .news_edit_bottom .edited_by_admin{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+.news .news_edit_bottom .admin_span{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #CB0000;
+}
+.news .news_edit_bottom .edit_and_time{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #666666;
+    padding-right: 20px;
+}
+
+
+
