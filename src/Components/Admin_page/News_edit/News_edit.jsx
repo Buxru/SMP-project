@@ -10,6 +10,8 @@ import {Button} from "@mui/material";
 import EditIcon from '@mui/icons-material/Edit';
 import TabPanel from '@mui/lab/TabPanel';
 import {TabContext} from "@mui/lab";
+import Wysywig from "../React_quill/React_quill";
+
 
 
 const News_edit = () => {
@@ -138,7 +140,7 @@ const News = () => {
                         </div>
                     </TabPanel>
                     <TabPanel value={1}>
-
+                        <Wysywig/>
                     </TabPanel>
                 </TabContext>
 
