@@ -1,4 +1,4 @@
-.Registration{
+.Registration {
     background-color: #494949;
     min-height: 655px;
     min-width: 419px;
@@ -9,7 +9,8 @@
     transform: translate(-50%, -50%);
     z-index: 1001;
 }
-.blur_reg{
+
+.blur_reg {
     position: fixed;
     z-index: 999;
     top: 0;
@@ -19,21 +20,24 @@
     background-color: rgba(0, 0, 5, 60%);
     backdrop-filter: blur(5px);
 }
-.tip_reg{
+
+.tip_reg {
     display: block;
     min-width: 130px;
     min-height: 24px;
     color: white;
     font-size: 16px;
 }
-.e-mail_reg{
+
+.e-mail_reg {
     display: flex;
     min-width: 307px !important;
     height: 47px;
     border-radius: 21px;
     justify-content: center;
 }
-.user_name{
+
+.user_name {
     display: flex;
     position: relative;
     min-width: 307px !important;
@@ -42,14 +46,16 @@
     border-radius: 21px;
     justify-content: center;
 }
-.user_surname{
+
+.user_surname {
     display: flex;
     min-width: 307px !important;
     height: 47px;
     border-radius: 21px;
     justify-content: center;
 }
-.user_sex{
+
+.user_sex {
     min-width: 298px !important;
     height: 47px;
     top: 86px;
@@ -60,32 +66,113 @@
     padding: 5px 12px;
     color: #393939;
 }
-.user_sex option{
+
+.user_sex option {
     padding: 0 15px 0 15px;
 }
-.user_date{
+
+.user_date {
     min-width: 307px !important;
     border-radius: 21px;
 }
+
 .user_date input[type="date"] {
     color: #393939;
 }
 
-.password_reg{
+.password_reg {
     display: flex;
     min-width: 307px !important;
     border-radius: 21px;
     justify-content: center;
 }
-.checkbox{
+
+.checkbox {
     display: flex;
     max-width: 290px;
     max-height: 50px;
 }
-.checkbox span{
+
+.checkbox span {
     padding-top: 17px;
 }
-.checkbox a{
+
+.checkbox a {
     color: #FFC700;
 }
+
+.news_edit_inputs {
+    width: 1006px;
+    height: 369px;
+}
+
+.news_edit_inputs input, .news_edit_inputs select, .news_edit_inputs textarea {
+    padding-left: 10px;
+    height: 38px;
+    background-color: #FCFCE4;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.news_edit_inputs span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.news_edit_inputs .news_edit_first_row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news_edit_inputs .news_edit_type {
+    width: 476px;
+    height: 74px;
+}
+
+.news_edit_inputs .news_edit_type select {
+    width: 476px;
+}
+
+.news_edit_inputs .news_edit_genre select {
+    width: 476px;
+}
+
+.news_edit_inputs .news_edit_second_row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+}
+.news_edit_inputs .news_edit_second_row .news_edit_hot_title input {
+    width: 384px;
+}
+.news_edit_inputs .news_edit_second_row .news_edit_title input{
+    width: 590px;
+}
+.news_edit_inputs .news_edit_third_row{
+    margin-top: 21px;
+}
+.news_edit_inputs .news_edit_third_row textarea{
+    width: 1007px;
+    height: 149px;
+}
+.news_edit_wysywig{
+    margin-top: 21px;
+}
+.news_edit_wysywig .news_edit_wysywig_span{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
 

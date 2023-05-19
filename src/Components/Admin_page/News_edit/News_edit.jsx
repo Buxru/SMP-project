@@ -13,7 +13,6 @@ import {TabContext} from "@mui/lab";
 import Wysywig from "../React_quill/React_quill";
 
 
-
 const News_edit = () => {
     const user_info = {
         name: 'Никита',
@@ -64,7 +63,7 @@ const News = () => {
     ]
     const [visible, setVisible] = useState(info)
     const getVisible = (key) => {
-        const id = key-1;
+        const id = key - 1;
         const updatedNews = [...visible];
         updatedNews[id].visible = !updatedNews[id].visible
         setVisible(updatedNews);
@@ -73,15 +72,16 @@ const News = () => {
     const getColor = (genre) => {
         switch (genre) {
             case 'politics':
-                return { color: '#0400B8'};
+                return {color: '#0400B8'};
             case 'job':
-                return { color: '#A94E3A'};
+                return {color: '#A94E3A'};
             case 'education':
-                return { color: '#00A67E'};
+                return {color: '#00A67E'};
             case 'healthcare':
                 return {color: '#FF6A6A'};
         }
     }
+
     return (
         <div className="admin_news">
             <div className="news_edit_name">
@@ -92,14 +92,26 @@ const News = () => {
                     <Tabs
                         TabIndicatorProps={{sx: {backgroundColor: '#F8C100'}}}
                         sx={{
-                            "& button:hover":{color: 'white'},
+                            "& button:hover": {color: 'white'},
                             "& button.Mui-selected": {color: 'white'},
                         }}
                         value={value}
                         onChange={(e, val) => setValue(val)}
                         aria-label="basic tabs example">
-                        <Tab disableRipple = 'true' className="news_list" label="Керування новинами" sx={{fontSize: 20, color: grey[100], textTransform: "none", paddingLeft: 0, paddingBottom: 0}}/>
-                        <Tab disableRipple = 'true' className="edit_news" label="Додати новину" sx={{fontSize: 20, color: grey[100], textTransform: "none", paddingLeft: 0, paddingBottom: 0}}/>
+                        <Tab disableRipple='true' className="news_list" label="Керування новинами" sx={{
+                            fontSize: 20,
+                            color: grey[100],
+                            textTransform: "none",
+                            paddingLeft: 0,
+                            paddingBottom: 0
+                        }}/>
+                        <Tab disableRipple='true' className="edit_news" label="Додати новину" sx={{
+                            fontSize: 20,
+                            color: grey[100],
+                            textTransform: "none",
+                            paddingLeft: 0,
+                            paddingBottom: 0
+                        }}/>
                     </Tabs>
                     <TabPanel value={0} className="TabPanel_news">
                         <div className="news_container">
@@ -111,10 +123,13 @@ const News = () => {
                                     </div>
                                     <div className="news_edit_info">
                                         <div className="edit_news_info">
-                                            <span className="ID">#{element.ID}</span><span className="dash"> - </span><span className="news_edit_hot_title">{element.hotTitle}</span><span className="news_edit_title"> {element.title}</span>
+                                            <span className="ID">#{element.ID}</span><span
+                                            className="dash"> - </span><span
+                                            className="news_edit_hot_title">{element.hotTitle}</span><span
+                                            className="news_edit_title"> {element.title}</span>
                                         </div>
                                         <div className="hidden_eye">
-                                            <Button disableRipple = 'true' onClick={() => getVisible(element.ID)}>
+                                            <Button disableRipple='true' onClick={() => getVisible(element.ID)}>
                                                 {visible.find((item) => item.ID === element.ID)?.visible ? (
                                                     <VisibilityIcon sx={{color: grey[900], width: 58, height: 50}}/>
                                                 ) : (
@@ -125,10 +140,11 @@ const News = () => {
                                     </div>
                                     <div className="news_edit_bottom">
                                         <div className="news_edit_admin">
-                                            <span className="edited_by_admin">Редаговано адміном</span> <span className="admin_span">{element.admin}</span>
+                                            <span className="edited_by_admin">Редаговано адміном</span> <span
+                                            className="admin_span">{element.admin}</span>
                                         </div>
                                         <div className="edit_and_time">
-                                            <Button disableRipple = 'true' sx={{color: grey[900], height: 42, width: 20}}>
+                                            <Button disableRipple='true' sx={{color: grey[900], height: 42, width: 20}}>
                                                 <EditIcon sx={{height: 42, width: 30}}/>
                                             </Button>
                                             {element.timeAgo}
@@ -140,7 +156,50 @@ const News = () => {
                         </div>
                     </TabPanel>
                     <TabPanel value={1}>
-                        <Wysywig/>
+                        <div className="news_edit_inputs">
+                            <div className="news_edit_first_row">
+                                <div className="news_edit_type">
+                                    <span>Тип новини</span>
+                                    <br/>
+                                    <select className="news_type" id="news_type">
+                                        <option value="Головна">Головна</option>
+                                        <option value="Звичайна">Звичайна</option>
+                                    </select>
+                                </div>
+                                <div className="news_edit_genre">
+                                    <span>Жанр</span>
+                                    <br/>
+                                    <select className="news_genre" id="news_genre">
+                                        <option value="politics">politics</option>
+                                        <option value="education">education</option>
+                                        <option value="healthcare">healthcare</option>
+                                        <option value="job">job</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div className="news_edit_second_row">
+                                <div className="news_edit_hot_title">
+                                    <span>Горяча назва</span>
+                                    <br/>
+                                    <input type="text"/>
+                                </div>
+                                <div className="news_edit_title">
+                                    <span>Заголовок</span>
+                                    <br/>
+                                    <input type="text"/>
+                                </div>
+                            </div>
+                            <div className="news_edit_third_row">
+                                <span>Короткий опис</span>
+                                <br/>
+                                <textarea rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div className="news_edit_wysywig">
+                            <span className="news_edit_wysywig_span">Пост новини</span>
+                            <br/>
+                            <Wysywig/>
+                        </div>
                     </TabPanel>
                 </TabContext>
 
