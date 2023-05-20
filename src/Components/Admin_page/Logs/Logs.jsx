@@ -1,16 +1,16 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import DownloadIcon from '@mui/icons-material/Download';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import './Logs.css';
-import {Button, List, ListItem, ThemeProvider} from "@mui/material";
-import {grey, purple} from '@mui/material/colors';
-import {yellow} from '@mui/material/colors';
+import { Button, List, ListItem, ThemeProvider } from "@mui/material";
+import { grey, purple } from '@mui/material/colors';
+import { yellow } from '@mui/material/colors';
 import { createTheme } from '@mui/material/styles';
 import { styled } from '@mui/material/styles';
 import Side_bar from "../Side_bar/Side_bar";
-
-
+import Menu from "@material-ui/core/Menu";
+import MenuItem from "@material-ui/core/MenuItem";
 
 const Logs = () => {
     const user_info = {
@@ -18,17 +18,19 @@ const Logs = () => {
         surname: 'Покора',
         avatar: 'https://s6.stc.all.kpcdn.net/afisha/msk/wp-content/uploads/sites/5/2023/01/kadr-iz-filma-avatar-put-vody.jpg',
         rang: 'Адмін'
-    }
+    };
+
     return (
-            <div className="home">
-                <Side_bar user_info={user_info}/>
-                <div className="home_page_container">
-                    <LogsHeader/>
-                    <LogsTable/>
-                </div>
+        <div className="home">
+            <Side_bar user_info={user_info}/>
+            <div className="home_page_container">
+                <LogsHeader />
+                <LogsTable />
             </div>
+        </div>
     );
 };
+
 
 const LogsHeader = () => {
 
@@ -120,16 +122,37 @@ const LogsTable = () => {
             },
         },
     });
+
+    const initialState = {
+        mouseX: null,
+        mouseY: null
+    };
+
+    const [contextMenuState, setContextMenuState] = useState(initialState);
+
+    const handleContextMenu = (event) => {
+        event.preventDefault();
+        setContextMenuState(
+            contextMenuState.mouseX === null && contextMenuState.mouseY === null
+                ? {
+                    mouseX: event.clientX + 2,
+                    mouseY: event.clientY - 6,
+                }
+                : {mouseX: null, mouseY: null}
+        );
+    };
+
+    const handleCloseContextMenu = () => {
+        setContextMenuState(initialState);
+    };
     return (
         <>
             <ThemeProvider theme={theme}>
             <div className="logs_area">
                 <div className="top_logs">
-
                     <div>
                         Користувачі сайту
                     </div>
-
                     <Button onClick={clickedSort} variant="outlined" className="StyledButton" sx={{color: grey[300], '&:hover': {bgcolor: '#1A1A1A'}}}>
                         Відсортувати за
 
@@ -157,13 +180,33 @@ const LogsTable = () => {
                 </div>
                 <div className="logs_table">
                     {logs.map((log, index) => (
-                        <div key={index} className="logs_row">
+                        <div className="logs_context" key={index}>
+                            <div className="logs_row" onContextMenu={handleContextMenu}>
                             <div className="logs_cell">{log.ID}</div>
                             <div className="logs_cell">{log.IP}</div>
                             <div className="logs_cell">{log.firstEnter}</div>
                             <div className="logs_cell">{log.lastEnter}</div>
                             <div className="logs_cell">{log.login}</div>
                             <div className="logs_cell">{log.role}</div>
+                        </div>
+                                <div onContextMenu={handleContextMenu}>
+                                    <Menu
+                                        keepMounted
+                                        open={contextMenuState.mouseY !== null}
+                                        onClose={handleCloseContextMenu}
+                                        anchorReference="anchorPosition"
+                                        anchorPosition={
+                                            contextMenuState.mouseY !== null && contextMenuState.mouseX !== null
+                                                ? { top: contextMenuState.mouseY, left: contextMenuState.mouseX }
+                                                : undefined
+                                        }
+                                    >
+                                        <MenuItem onClick={handleCloseContextMenu}>Copy</MenuItem>
+                                        <MenuItem onClick={handleCloseContextMenu}>Print</MenuItem>
+                                        <MenuItem onClick={handleCloseContextMenu}>Highlight</MenuItem>
+                                        <MenuItem onClick={handleCloseContextMenu}>Email</MenuItem>
+                                    </Menu>
+                                </div>
                         </div>
                     ))}
                 </div>

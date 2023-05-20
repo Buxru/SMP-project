@@ -11,6 +11,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import TabPanel from '@mui/lab/TabPanel';
 import {TabContext} from "@mui/lab";
 import Wysywig from "../React_quill/React_quill";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 
 const News_edit = () => {
@@ -59,6 +60,69 @@ const News = () => {
             timeAgo: '3  дня назад',
             admin: 'Pylay',
             visible: true
+        },
+        {
+            ID: 4,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 5,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 6,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 7,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 8,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 9,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
+        },
+        {
+            ID: 10,
+            genre: 'job',
+            hotTitle: 'Lorem ipsum',
+            title: 'dolor sit amet, consectetur adipiscing elit',
+            timeAgo: '3  дня назад',
+            admin: 'Pylay',
+            visible: true
         }
     ]
     const [visible, setVisible] = useState(info)
@@ -81,7 +145,6 @@ const News = () => {
                 return {color: '#FF6A6A'};
         }
     }
-
     return (
         <div className="admin_news">
             <div className="news_edit_name">
@@ -116,8 +179,8 @@ const News = () => {
                     <TabPanel value={0} className="TabPanel_news">
                         <div className="news_container">
                             {info.map((element) =>
+                                <div className="news_context">
                                 <div className="news" key={element.ID}>
-
                                     <div className="news_genre" style={getColor(element.genre)}>
                                         {element.genre}
                                     </div>
@@ -144,13 +207,16 @@ const News = () => {
                                             className="admin_span">{element.admin}</span>
                                         </div>
                                         <div className="edit_and_time">
-                                            <Button disableRipple='true' sx={{color: grey[900], height: 42, width: 20}}>
-                                                <EditIcon sx={{height: 42, width: 30}}/>
+                                            <Button  sx={{color: grey[900], height: 42, width: 10}}>
+                                                <EditIcon  sx={{height: 42, width: 30}}/>
+                                            </Button>
+                                            <Button  sx={{color: grey[900], height: 42, width: 10, marginRight: 2}}>
+                                                <DeleteIcon sx={{height: 42, width: 30}}/>
                                             </Button>
                                             {element.timeAgo}
                                         </div>
                                     </div>
-
+                                </div>
                                 </div>
                             )}
                         </div>

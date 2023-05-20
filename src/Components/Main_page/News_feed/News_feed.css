@@ -83,7 +83,7 @@
         display: none;
     }
     .partition_news {
-        max-height: 200px;
+        max-height: 550px;
     }
     .partition_news .container {
         display: grid;
@@ -99,6 +99,11 @@
     }
     .main_news {
         margin-bottom: 25px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .partition_news {
+        max-height: 1200px;
     }
 }
 
