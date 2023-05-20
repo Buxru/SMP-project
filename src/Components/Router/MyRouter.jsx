@@ -6,6 +6,7 @@ import HomeAdmin from "../Admin_page/AdminHome/HomeAdmin";
 import Logs from "../Admin_page/Logs/Logs";
 import Statistic from "../Admin_page/Statistic/Statistic";
 import News_edit from "../Admin_page/News_edit/News_edit";
+import ErrorPage from "../Main_page/ErrorPage/ErrorPage";
 
 
 const MyRouter = () => {
@@ -20,6 +21,7 @@ const MyRouter = () => {
                         <Route path="admin/users" element={<Logs/>}/>
                         <Route path="admin/statistic" element={<Statistic/>}/>
                         <Route path="admin/news_edit" element={<News_edit/>}/>
+                        <Route path="*" element={<ErrorPage/>}/>
                     </Route>
                 </Routes>
             </BrowserRouter>
